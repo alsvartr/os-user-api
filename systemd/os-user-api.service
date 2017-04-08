@@ -1,0 +1,14 @@
+[Unit]
+Description=OpenStack User API
+
+[Service]
+Type=forking
+PIDFile=/tmp/os-user-api.rb.pid
+EnvironmentFile=/etc/os-user-api/config
+ExecStart=/opt/os-user-api/start.rb start
+User=openstack_admin
+Group=openstack_admin
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

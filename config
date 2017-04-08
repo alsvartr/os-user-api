@@ -1,0 +1,25 @@
+# general
+### bind to IP and port (default: "" and 8888)
+bind = ""
+port = 8888
+### update interval in sec. for periodic actions (default: 3600)
+update_int = 3600
+### token for authentication
+token = 12345
+### domain of the openstack instances
+domain = domain.com
+### run program as this user
+user = openstack_admin
+
+# ssh
+ssh_user = openstack_admin
+ssh_pass = ""
+### path to ssh key file
+ssh_key = /home/openstack_admin/.ssh/id_rsa
+
+
+# storage backend specific
+### cinder LVM backlog
+lvm_free_space = 0
+
+storage_backend = lvm
